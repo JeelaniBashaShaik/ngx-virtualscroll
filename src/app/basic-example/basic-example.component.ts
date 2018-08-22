@@ -15,7 +15,7 @@ export class BasicExampleComponent implements OnInit {
 
   generateItems() {
     for (let i = 1; i <= 10000; i++) {
-      const obj = { title: 'title' + i, desc: 'this is sample desc no:' + i, link1: 'link' + i, link2: 'link' + 2 };
+      const obj = { title: 'title' + i, desc: 'this is sample desc no:' + i, link1: 'link' + i };
       this.rows.push(obj);
     }
   }

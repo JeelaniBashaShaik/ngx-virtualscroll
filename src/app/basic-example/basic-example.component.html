@@ -2,12 +2,13 @@
 <hr/>
 
 
-<p>
- This example shows how to use ngx-virtualscroll component
-</p>
+
 
 <div class="row">
   <div class="col s6 m6 l6 xl6">
+      <p>
+          This example shows how to use ngx-virtualscroll component <span [style.float]= "'right'"><a [href]="'https://github.com/JeelaniBashaShaik/ngx-virtualscroll/tree/master/src/app/basic-example'" target="_blank">View Code</a></span>
+         </p>
     <div style="border:1px solid black;padding:10px">
       <ngx-virtualscroll [templateId]="mywish1" [rows]="rows" [itemHeight]=200 [height]=750></ngx-virtualscroll>
     </div>
@@ -27,8 +28,7 @@
        {{linkObj.desc}}
      </mz-card-content>
      <mz-card-action>
-       <a href="#">{{linkObj.link1}}</a>
-       <a href="#">{{linkObj.link2}}</a>
+       <a >{{linkObj.link1}}</a>
      </mz-card-action>
     </mz-card>
   </div>
