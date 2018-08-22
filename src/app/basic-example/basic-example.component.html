@@ -1,0 +1,35 @@
+<h3>Example</h3>
+<hr/>
+
+
+<p>
+ This example shows how to use ngx-virtualscroll component
+</p>
+
+<div class="row">
+  <div class="col s6 m6 l6 xl6">
+    <div style="border:1px solid black;padding:10px">
+      <ngx-virtualscroll [templateId]="mywish1" [rows]="rows" [itemHeight]=200 [height]=750></ngx-virtualscroll>
+    </div>
+  </div>
+</div>
+
+
+
+
+<ng-template #mywish1 let-linkObj="linkObj">
+  <div style="margin-left:10px;width:95%">
+     <mz-card class="blue-grey darken-1 white-text" [horizontal]="true" [hoverable]="true">
+     <mz-card-title>
+       {{linkObj.title}}
+     </mz-card-title>
+     <mz-card-content>
+       {{linkObj.desc}}
+     </mz-card-content>
+     <mz-card-action>
+       <a href="#">{{linkObj.link1}}</a>
+       <a href="#">{{linkObj.link2}}</a>
+     </mz-card-action>
+    </mz-card>
+  </div>
+</ng-template>

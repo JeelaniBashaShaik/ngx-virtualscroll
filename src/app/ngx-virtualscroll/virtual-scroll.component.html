@@ -1,0 +1,13 @@
+
+
+<div style="overflow-y:auto;position:relative" [style.width.px]="width" [style.height.px]="height" (scroll)="viewScrolled($event.target.scrollTop)">
+
+    <div style="opacity:0;top:0px;width:30px;position:absolute" id="opaqueDiv" [style.height.px]="invisibleHeight" ></div>
+    
+        <div  *ngFor="let item of viewPortItems;let index = index" style="position:absolute" [style.top.px]="item.top" [style.width]="'100%'">    
+
+            <ng-container *ngTemplateOutlet="templateId;context:{linkObj:item}"></ng-container>
+
+        </div>
+</div>
+
