@@ -1,0 +1,21 @@
+<h3>Styled Example</h3>
+<hr/>
+
+
+
+
+<div class="row">
+  <div class="col s6 m6 l6 xl6">
+      <p>
+          This example shows how to use the styled ngx-virtualscroll component <span [style.float]= "'right'"><a [href]="'https://github.com/JeelaniBashaShaik/ngx-virtualscroll/tree/master/src/app/styled'" target="_blank">View Code</a></span>
+      </p>
+      <ngx-virtualscroll [templateId]="abc" [rows]="rows" [itemHeight]=40 [styled]=true [width]=200 [height]=400></ngx-virtualscroll>
+    
+  </div>
+</div>
+
+
+<ng-template #abc let-linkObj="linkObj">
+{{linkObj.title}}
+</ng-template>
+

@@ -10,6 +10,7 @@ import { DocsComponent } from './docs/docs.component';
 import { BasicExampleComponent } from './basic-example/basic-example.component';
 import { HowToUseComponent } from './how-to-use/how-to-use.component';
 import { LandingComponent } from './landing/landing.component';
+import { StyledComponent } from './styled/styled.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LandingComponent } from './landing/landing.component';
     DocsComponent,
     BasicExampleComponent,
     HowToUseComponent,
-    LandingComponent
+    LandingComponent,
+    StyledComponent
   ],
   imports: [
     BrowserModule, RoutingModule,

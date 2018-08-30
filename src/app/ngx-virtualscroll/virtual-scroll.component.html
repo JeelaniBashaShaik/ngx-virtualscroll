@@ -1,6 +1,6 @@
 
 
-<div style="overflow-y:auto;position:relative" [style.width.px]="width" [style.height.px]="height" (scroll)="viewScrolled($event.target.scrollTop)">
+<div [ngClass]="{card:styled}" style="overflow-y:auto;position:relative" [style.width.px]="width" [style.height.px]="height" (scroll)="viewScrolled($event.target.scrollTop)">
 
     <div style="opacity:0;top:0px;width:30px;position:absolute" id="opaqueDiv" [style.height.px]="invisibleHeight" ></div>
     

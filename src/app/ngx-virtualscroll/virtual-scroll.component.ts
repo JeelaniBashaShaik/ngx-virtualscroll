@@ -14,6 +14,7 @@ export class VirtualScrollComponent implements OnInit {
   @Input() itemHeight;
   @Input() height;
   @Input() width;
+  @Input() styled = true;
 
   invisibleHeight: number;
   countOfItemsInViewPort: number;
